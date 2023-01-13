@@ -1,0 +1,10 @@
+//init
+@import'./init.scss';
+
+//function
+@import './animationLibrary.scss';
+
+// 在scss里import的时候，要用@符号。js里不用
+
+//main
+@import'./main.scss'

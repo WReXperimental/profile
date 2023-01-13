@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"> 
+<header>
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Resume</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Blog</a></li>
+  <!-- 快捷方法 （li>a）*4 然后tab -->
+</ul>
+</header>
+<main>
+<div class="card">
+<!-- 直接写 .card就会创造class为card的div -->
+<!-- span.card 然后tab会创造class为card的span，别的element都可以这样创建 -->
+
+<div class="left">
+  <h3>Hi, I'm LEO</h3>
+  <h5>FULL STACK ENGINEER</h5>
+  <hr>
+  <!-- hr可以在页面中添加一行横线，贯穿整个界面 -->
+<p> 
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laboriosam beatae quo, pariatur itaque tenetur non, dolore provident magni est iusto molestiae dolorum totam modi, autem et ducimus eius harum.
+</p>
+<div class="span">GET IN TOUCH</div>
+<!-- 网页上的button一般都用span来写 -->
+<div class="social">
+  <a href="#">
+    <i class="fab fa-github"></i>
+  </a>
+  <!-- 成串的图标考虑为list -->
+  <!-- fontawesome 可以查找图标。加  <script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script> 在html文件开头，然后在fontawesome里找到喜欢的图标，如<i class="fa-brands fa-github"></i> 然后把class里的fa-brands改成fab，就可以用了-->
+  <a href="#">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="#">
+    <i class="fab fa-google"></i>
+  </a>
+</div>
+</div>  
+
+<div class="right"></div>
+<div class="picture-shadow">
+  <img id="pictureImage" class="pirture-image" src="./image/IMG_0670.JPG" alt="Profile of LEO" width="240" height="240" >
+</div>
+</div>
+
+
+
+
+</main>
+<footer>
+  <ul>
+  <!-- icon的图片在remix icon里可以免费下载，在网站上点击图片下载svg格式。svg格式放大不会失真，是计算出来的 -->
+    <li><a href="#"><img src="./icon/wechat-fill.svg" alt="wechat"></a></li>
+    <li><a href="#"><img src="./icon/bilibili-fill.svg" alt="bilibili"></a></li>
+    <li><a href="#"><img src="./icon/youtube-fill.svg" alt="youtube"></a></li>
+  </ul>
+</footer>
+
+         </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+
+</html>

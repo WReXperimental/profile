@@ -1,0 +1,22 @@
+@import './normalize.scss';
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+
+list-style: none;
+
+text-decoration: none;
+box-sizing: border-box;
+user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+
+html, body{
+  width: 100vw;
+  height: 100vh;
+}

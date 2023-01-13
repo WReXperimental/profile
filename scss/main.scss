@@ -1,0 +1,55 @@
+#app{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  height: 100%; 
+  // 如果高不写100%，那么就不会在页面中间置中，会顶着最上面置中，但是宽度可以不写100%
+}
+
+@mixin navFrame{
+  width: 100%;
+  max-width: 60rem;
+}
+
+header{
+ @include navFrame()
+}
+header ul{
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-evenly;
+    // 如果header里没有设置宽度为100%，那么header里的ul设置space-evenly就没有用，因为默认长度是有多少content，header就是多长
+}
+
+
+
+
+footer{
+  @include navFrame();
+  ul{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+}
+
+
+main{
+  @include navFrame();
+  .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+.left{
+  max-width: 30rem;
+ }
+
+ .right{
+  max-width: 30rem;
+ }
+
+  }
+}
