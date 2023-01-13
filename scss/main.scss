@@ -12,7 +12,9 @@
 @mixin navFrame{
   width: 100%;
   max-width: 60rem;
+
 }
+
 
 header{
  @include navFrame()
